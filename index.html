@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Validazione del form tramite JavaScript</h1>
+    <!-- Old Style Validation-->
+    <!-- onsumbit richiama la funzione validateForm() al click del bottone submit -->
+    <form action="" name="form" onsubmit="return validateForm()">
+        <h3>1. L'input del nome non deve essere vuoto</h3>
+        <label for="name" >Nome
+            <input type="text" id="name" name="nome">
+        </label>
+        <h3>2. La password deve avere almeno 8 caratteri</h3>
+        <label for="password"> Password
+            <input type="password" id="password" name="password">
+        </label>
+        <h3>3. L'età deve essere un numero maggiore di 18</h3>
+        <label for="eta"> Eta
+            <input type="number" id="eta" name="eta">
+        </label>
+        <button id="submit">Submit</button>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
